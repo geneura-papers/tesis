@@ -2,7 +2,7 @@ Tesis: Inteligencia Computacional y juegos aplicados a la enseñanza
 ======
 
 ## Requisitos para compilar el pdf:
-- Instalar texlive-science texlive-publishers
+- Instalar texlive-science texlive-publishers texlive-fonts-extra
 - Instalar "pygments" http://pygments.org/docs/installation/
 - Ejecutar ./compilar.bat
 
