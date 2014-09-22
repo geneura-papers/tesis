@@ -21,13 +21,13 @@ Tesis: Inteligencia Computacional y juegos aplicados a la enseñanza
 
 ##Enlaces relacionados
 
-* Competiciones basadas en juegos</b><br>
-http://cis.ieee.org/student-games-based-competition.html<br>
-* Competiciones en Inteligencia Artificial</b><br>
+* Competiciones basadas en juegos
+http://cis.ieee.org/student-games-based-competition.html
+* Competiciones en Inteligencia Artificial
 http://en.wikipedia.org/wiki/Competitions_and_prizes_in_artificial_intelligence#Games
 
 
-##Competiciones de juegos de Inteligencia Computacional</h3>
+##Competiciones de juegos de Inteligencia Computacional
 
 * **AI Challenge</b> http://aichallenge.org/**
 
