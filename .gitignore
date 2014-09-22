@@ -26,3 +26,6 @@ tesis.m*
 *.mtc0
 *.mtc1
 *.out
+tesis.out
+tesis.toc
+test_pygmentize.tex
