@@ -1,5 +1,6 @@
 Chapters/*.aux
 FrontBackmatter/*.aux
+pdf/*.pdf
 tesis.m*
 *DS_Store
 
