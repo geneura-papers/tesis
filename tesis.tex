@@ -2,7 +2,7 @@
 % A Classic Thesis Style
 % An Homage to The Elements of Typographic Style
 %
-% Copyright (C) 2007 André Miede http://www.miede.de
+% Copyright (C) 2007 Andrï¿½ Miede http://www.miede.de
 %
 % If you like the style then I would appreciate a postcard. My address
 % can be found in the file ClassicThesis.pdf. A collection of the
@@ -40,7 +40,10 @@
 %    * support a List of Listings that looks like the other lists
 % **************************************************************************************************************
 %\documentclass[twoside,titlepage,fleqn,BCOR5mm]{scrbook}%,BCOR5mm
+
+% Comentado por JCC 
 \documentclass[10pt]{scrbook}%
+
 %\usepackage[paperwidth=18.89cm,paperheight=24.58cm,twoside,bindingoffset=9mm,outer=2.2cm,inner=1cm,top=2.6cm,bottom=4.5cm]{geometry}
 
 \let\upDelta\Delta
@@ -76,23 +79,32 @@
 % ********************************************************************
 % Re-usable information
 % ********************************************************************
-\newcommand{\myTitle}{Service Oriented Architecture for Adaptive Evolutionary Algorithms: Implementation and Applications\xspace}
-\newcommand{\myDegree}{Doctor en Informática\xspace}
-\newcommand{\myName}{Pablo García Sánchez\xspace}
+
+% added by JCC to use Pygmentize 
+% http://tex.stackexchange.com/questions/23458/how-to-install-syntax-highlight-package-minted-on-windows-7
+% \newcommand\TestAppExists[3]{#2}
+\usepackage{minted}
+
+
+\newcommand{\myTitle}{INTELIGENCIA COMPUTACIONAL Y JUEGOS APLICADOS A LA ENSE\~NANZA\xspace}
+\newcommand{\myDegree}{Doctor en Inform\'atica\xspace}
+\newcommand{\myName}{Jos\'e Carpio Ca\~nada\xspace}
 \newcommand{\myDegreeManualName}{Tesis Doctoral\xspace}
 \newcommand{\myProf}{myProf\xspace}
 \newcommand{\myOtherProf}{myOtherProf\xspace}
-\newcommand{\myDirectorOne}{Jesús González Peñalver}
-\newcommand{\myDirectorTwo}{Juan Julián Merelo Guervós}
+\newcommand{\myDirectorOne}{Juan Juli\'an Merelo Guerv\'os}
+\newcommand{\myDirectorTwo}{V\'ictor Manuel Rivas Santos}
 \newcommand{\myDirectorThree}{Alberto Prieto Espinosa}
-\newcommand{\mySupervisor}{Prof. Dr. D. \myDirectorOne\\Prof. Dr. D. \myDirectorTwo\\Prof. Dr. D. \myDirectorThree}
-\newcommand{\myFaculty}{Escuela Técnica Superior de Informática y Telecomunicaciones\xspace}
-\newcommand{\myDepartment}{Arquitectura y Tecnología de Computadores\xspace}%(Circuits and Systems for Information Processing)
+\newcommand{\mySupervisor}{Prof. Dr. D. \myDirectorOne\\Prof. Dr. D. \myDirectorTwo}
+\newcommand{\myFaculty}{Escuela T\'ecnica Superior de Inform\'atica y Telecomunicaciones\xspace}
+\newcommand{\myDepartment}{Arquitectura y Tecnolog\'ia de Computadores\xspace}
+\newcommand{\myDepartmentTwo}{Inform\'atica\xspace}
 \newcommand{\myUni}{\protect{Universidad de Granada}\xspace}
+\newcommand{\myUniTwo}{\protect{Universidad de Ja\'en}\xspace}
 \newcommand{\myLocation}{Granada\xspace}
-\newcommand{\myDay}{13}
-\newcommand{\myTime}{Mayo de 2014\xspace}
-% Ya vamos por mayo... igual deberías cambiar esto - JJ FERGU: Hombre, claro.
+\newcommand{\myDay}{11}
+\newcommand{\myTime}{Noviembre de 2014\xspace}
+
 %*******************************************************
 % Packages with options that might require adjustments
 %*******************************************************
@@ -144,6 +156,13 @@
 
 \input{coloricos} %OJO CON ESTO (EVOSOFT) vs highlight.sty de SOA-SOCO
 \usepackage[final]{listings}
+
+
+% JCC
+\usepackage{color}
+\pagecolor{white}
+\usepackage[final]{pdfpages}
+
 %\lstset{
 %basicstyle=\ttfamily \scriptsize,
 %backgroundcolor=\color{ultralightOrange},
@@ -205,11 +224,11 @@
 %********************************************************************
 % Hyphenation
 %*******************************************************
-\hyphenation{Mul-ti-pli-ca-ti-ve de-sa-rro-llar he-te-ro-gé-ne-os pro-pues-ta o-fi-ci-na vi-de-o-ga-mes zoo-kee-per sub-po-pu-la-tion pa-ra-digm Sprin-ger Mi-guel Mo-ra ha-bi-ta-ción I-lle-ras Ge-ne-bot pre-sents Ba-ye-sian al-go-rithms E-C-F re-pla-cer re-pla-cer-Na-me He-Ha OS-Gi OS-Gi-Liath W-S-D-L pro-vi-der M-M-D-P}
+%\hyphenation{Mul-ti-pli-ca-ti-ve de-sa-rro-llar he-te-ro-gï¿½-ne-os pro-pues-ta o-fi-ci-na vi-de-o-ga-mes zoo-kee-per sub-po-pu-la-tion pa-ra-digm Sprin-ger Mi-guel Mo-ra ha-bi-ta-ciï¿½n I-lle-ras Ge-ne-bot pre-sents Ba-ye-sian al-go-rithms E-C-F re-pla-cer re-pla-cer-Na-me He-Ha OS-Gi OS-Gi-Liath W-S-D-L pro-vi-der M-M-D-P}
 
 
 %********************************************************************
-% Redefinir en español la edición en la bibliografía
+% Redefinir en espaï¿½ol la ediciï¿½n en la bibliografï¿½a
 %*******************************************************
 
 \declarebtxcommands{spanish}{%
@@ -220,13 +239,13 @@ ${#1}^a$}%\btxnumeralfallback{spanish}{#1}}%
 }
 
 %********************************************************************
-% Renombrar al español algunos identificadores
+% Renombrar al espaï¿½ol algunos identificadores
 %*******************************************************
 
 %\renewcommand{\contentsname}{Lista de Contenidos}
 %\renewcommand{\listfigurename}{Lista de Figuras}
 %\renewcommand{\listtablename}{Lista de Tablas}
-%\renewcommand{\bibname}{Bibliografía}
+%\renewcommand{\bibname}{Bibliografï¿½a}
 %\renewcommand{\partname}{Parte}
 %\renewcommand{\figurename}{Figura}
 %\renewcommand{\tablename}{Tabla}
@@ -354,7 +373,7 @@ p{0.95\textwidth}}
 %\renewcommand{\contentsname}{Lista de Contenidos}
 %\renewcommand{\listfigurename}{Lista de Figuras}
 %\renewcommand{\listtablename}{Lista de Tablas}
-%\renewcommand{\bibname}{Bibliografía}
+%\renewcommand{\bibname}{Bibliografï¿½a}
 %\renewcommand{\partname}{Parte}
 %\renewcommand{\figurename}{Figura}
 %\renewcommand{\tablename}{Tabla}
@@ -370,7 +389,7 @@ p{0.95\textwidth}}
 %\renewcommand{\itemautorefname}{Item}
 %\newcommand*{\subfigureautorefname}{Figura}
 
-% Parámetros para Lettrine (lo de la primera letra más grande en los comienzos de los capítulos)
+% Parï¿½metros para Lettrine (lo de la primera letra mï¿½s grande en los comienzos de los capï¿½tulos)
 %
 \setcounter{DefaultLines}{2}
 \renewcommand{\DefaultLoversize}{0.1} %0.25
@@ -412,7 +431,8 @@ p{0.95\textwidth}}
 \cleardoublepage
 \include{FrontBackmatter/Abstract}
 \cleardoublepage
-\include{FrontBackmatter/Publication}
+% JCC
+% \include{FrontBackmatter/Publication}
 \cleardoublepage
 \include{FrontBackmatter/Acknowledgments}
 \pagestyle{scrheadings}
@@ -432,45 +452,63 @@ p{0.95\textwidth}}
 
 \ifthenelse{\boolean{TesisCompleta}}{
 %-----------------------------
-\myPart{Introducción}\label{part:introduccion}
+\myPart{IntroducciÃ³n}\label{part:introduccion}
 
-%REALMENTE tienes que escribir una introducción. 
+%REALMENTE tienes que escribir una introducciÃ³n. 
 
 }
 {
 %-----------------------------  PONER LETTRINE EN SECCIONES Y NO INDENT EN SUBSECCIONES!!!
-\myPart{Introduction}\label{part:introduccion}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{\myChapter{Introduction}\label{chap:introduction}}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro-SPANISH}}{\myChapter{Introducci{\'o}n}\label{chap:introductionSPANISH}}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/02-distributedEAs}}{\myChapter{Evolutionary Algorithms}\label{chap:distributedEAs}}
-%\ifthenelse{\equal{\value{IncluyeCapitulo}}{5}}{\include{Chapters/BajaVision}}{\myChapter{Cuestionarios para la \textsc{Baja Visión}}\label{sec:cuestionariosBajaVision}}
-%-----------------------------
-\myPart{Materials and Methods}\label{part:metodoYmateriales}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/03-soa}}{\myChapter{Service Oriented Architecture: technologies and restrictions for designing services for EAs}\label{chap:soa}}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/04-soaea}}{\myChapter{A methodology for developing services for EAs}\label{chap:soaea}}
-%\ifthenelse{\equal{\value{IncluyeCapitulo}}{8}}{\include{Chapters/cuestionariosBordes}}{\myChapter{Recomendaciones para la Construcción de Cuestionarios de calidad de bordes}\label{chap:recCuestCalidadBordes}}
-%-----------------------------
-\myPart{Experimental Results}\label{part:resultadosExperimentales}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/05-osgiliath}}{\myChapter{Implementation of SOA-EA}\label{chap:osgiliath}}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/06-adaptive}}{\myChapter{Parameter adaptation in heterogeneous machines}\label{chap:adaptive}}
-%\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/07-art}}{\myChapter{HSV and RGB comparison in Evolutionary Art}\label{chap:art}}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/08-rts}}{\myChapter{Generation of bots for RTS games using Genetic Programming}\label{chap:rts}}
+% -- \myPart{Introduction}\label{part:introduccion}
+
+%----- Modificado por JCC
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{\myChapter{Introduction}\label{chap:introduction}}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro-SPANISH}}{\myChapter{Introducci{\'o}n}\label{chap:introductionSPANISH}}
+% --\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/02-distributedEAs}}{\myChapter{Evolutionary Algorithms}\label{chap:distributedEAs}}
 
 %-----------------------------
-\myPart{Conclusions}\label{part:discusionYconclusiones}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/09-conclusions}}{\myChapter{Conclusions and future work}\label{chap:conclusions}}
-\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/09-conclusions-SPANISH}}{\myChapter{Conclusiones y trabajo futuro}\label{chap:conclusionsSPANISH}}
+% -- \myPart{Materials and Methods}\label{part:metodoYmateriales}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/03-soa}}{\myChapter{Service Oriented Architecture: technologies and restrictions for designing services for EAs}\label{chap:soa}}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/04-soaea}}{\myChapter{A methodology for developing services for EAs}\label{chap:soaea}}
+%-----------------------------
+% -- \myPart{Experimental Results}\label{part:resultadosExperimentales}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/05-osgiliath}}{\myChapter{Implementation of SOA-EA}\label{chap:osgiliath}}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/06-adaptive}}{\myChapter{Parameter adaptation in heterogeneous machines}\label{chap:adaptive}}
+%\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/07-art}}{\myChapter{HSV and RGB comparison in Evolutionary Art}\label{chap:art}}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/08-rts}}{\myChapter{Generation of bots for RTS games using Genetic Programming}\label{chap:rts}}
+
+%-----------------------------
+% -- \myPart{Conclusions}\label{part:discusionYconclusiones}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/09-conclusions}}{\myChapter{Conclusions and future work}\label{chap:conclusions}}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/09-conclusions-SPANISH}}{\myChapter{Conclusiones y trabajo futuro}\label{chap:conclusionsSPANISH}}
 %\ifthenelse{\equal{\value{IncluyeCapitulo}}{12}}{\include{Chapters/conclusiones}}{\myChapter{Conclusiones}\label{chap:conclusiones}}
 
 }
+
 
 % *******************************************************
 % Backmatter
 % *******************************************************
 \appendix
 \myPart{Appendix}
-\include{Chapters/appendixosgi}
-\include{Chapters/appendixosgiliath}
+% \include{Chapters/appendixosgi}
+% \include{Chapters/appendixosgiliath}
+
+% JCC PDFs
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
+ addtolist={1, table, {Evolving Multilayer Perceptrons}, tab:evolving}]{pdf/jcal12075.pdf}
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
+ addtolist={1, table, { Classroom to Mobile Robots Competition Arena: An experience on AI Teaching}, tab:robots}]{pdf/ijee2469ns.pdf}
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
+ addtolist={1, table, {Open classroom: enhancing student achievement on AI through an international online computation }, tab:cosmobot}]{pdf/ants_iwann2013.pdf}
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
+ addtolist={1, table, {Evolving the Strategies of Agents for the ANTS Game}, tab:iwann}]{pdf/evolving.pdf}
+
+
+% \includepdf[pages={-}]{pdf/ijee2469ns.pdf}
+% \includepdf[pages={-}]{pdf/ants_iwann2013.pdf}
+% \includepdf[pages={-}]{pdf/evolving.pdf}
+
 %\include{Chapters/apendiceC}
 %********************************************************************
 % Other Stuff in the Back
@@ -480,7 +518,7 @@ p{0.95\textwidth}}
 %\cleardoublepage
 %\include{FrontBackmatter/Declaration}
 \cleardoublepage
-%La contraportada tiene que estar en página par!!
+%La contraportada tiene que estar en pÃ¡gina par!!
 % \include{FrontBackmatter/DirtyBackpage}
 
 % ********************************************************************
