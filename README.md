@@ -1,19 +1,23 @@
 Tesis: Inteligencia Computacional y juegos aplicados a la enseñanza
 ======
 
-<h3>Preguntas de invesigación</h3>
+## Requisitos para compilar el pdf:
+- Instalar texlive-science texlive-publishers
+- Instalar "pygments" http://pygments.org/docs/installation/
+- Ejecutar ./compilar.bat
 
-<ul>
-<li>¿Es posible mejorar la experiencia de aprendizaje de la Inteligencia Computacional (IC) a través de la participación en competiciones internacionales?</li>
+##Preguntas de invesigación
 
-<li>¿Es posible cunatificar cuantitativa y cualitativamente como mejora esta experiencia?</li>
+* ¿Es posible mejorar la experiencia de aprendizaje de la Inteligencia Computacional (IC) a través de la participación en competiciones internacionales?
 
-<li>¿Qué recursos son necesarios para poder participar en una competición de este tipo?</li>
+* ¿Es posible cunatificar cuantitativa y cualitativamente como mejora esta experiencia?
 
-<li>¿Qué técnicas son adecuadas enseñar en el contexto de las competiciones internacionales de IC?</li>
+*¿Qué recursos son necesarios para poder participar en una competición de este tipo?
 
-<li>¿Qué metodología utilizar para alcanzar este objetivo?</li>
-</ul>
+* ¿Qué técnicas son adecuadas enseñar en el contexto de las competiciones internacionales de IC?
+
+* ¿Qué metodología utilizar para alcanzar este objetivo?
+
 
 <h3>Enlaces relacionados</h3>
 
@@ -29,8 +33,6 @@ http://en.wikipedia.org/wiki/Competitions_and_prizes_in_artificial_intelligence#
 <b>Hello World Open</b> https://helloworldopen.com/<br>
 
 <hr>
-Requisitos para compilar el pdf:
-- Instalar "pygments" http://pygments.org/docs/installation/
-- Ejecutar ./compilar.bat
+
 
 Esta obra está licenciada bajo la Licencia Creative Commons Atribución 4.0 Internacional. Para ver una copia de esta licencia, visita http://creativecommons.org/licenses/by/4.0/deed.es.
