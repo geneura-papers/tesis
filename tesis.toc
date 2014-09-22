@@ -1,9 +1,0 @@
-\select@language {english}
-\select@language {english}
-\vspace {-\cftbeforepartskip }
-\contentsline {part}{i\hspace {1em}\spacedlowsmallcaps {Publicaciones}}{1}{part.1}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {Appendix}}{21}{part.2}
-\vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{23}{dummy.8}
-\select@language {english}
-\select@language {english}
