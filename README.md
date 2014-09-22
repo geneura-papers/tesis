@@ -1,6 +1,11 @@
 Tesis: Inteligencia Computacional y juegos aplicados a la enseñanza
 ======
 
+## Requisitos para compilar el pdf:
+- Instalar texlive-science texlive-publishers
+- Instalar "pygments" http://pygments.org/docs/installation/
+- Ejecutar ./compilar.bat
+
 ##Preguntas de invesigación
 
 * ¿Es posible mejorar la experiencia de aprendizaje de la Inteligencia Computacional (IC) a través de la participación en competiciones internacionales?
@@ -28,8 +33,6 @@ http://en.wikipedia.org/wiki/Competitions_and_prizes_in_artificial_intelligence#
 <b>Hello World Open</b> https://helloworldopen.com/<br>
 
 <hr>
-Requisitos para compilar el pdf:
-- Instalar "pygments" http://pygments.org/docs/installation/
-- Ejecutar ./compilar.bat
+
 
 Esta obra está licenciada bajo la Licencia Creative Commons Atribución 4.0 Internacional. Para ver una copia de esta licencia, visita http://creativecommons.org/licenses/by/4.0/deed.es.
