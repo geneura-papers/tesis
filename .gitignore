@@ -4,6 +4,7 @@ pdf/*.pdf
 tesis.m*
 *DS_Store
 
+*.aux
 *.glo
 *.idx
 *.log
@@ -28,3 +29,4 @@ tesis.m*
 *.out
 tesis.out
 test_pygmentize.tex
+tesis.pdf
