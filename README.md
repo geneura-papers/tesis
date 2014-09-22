@@ -1,19 +1,18 @@
 Tesis: Inteligencia Computacional y juegos aplicados a la enseñanza
 ======
 
-<h3>Preguntas de invesigación</h3>
+##Preguntas de invesigación
 
-<ul>
-<li>¿Es posible mejorar la experiencia de aprendizaje de la Inteligencia Computacional (IC) a través de la participación en competiciones internacionales?</li>
+* ¿Es posible mejorar la experiencia de aprendizaje de la Inteligencia Computacional (IC) a través de la participación en competiciones internacionales?
 
-<li>¿Es posible cunatificar cuantitativa y cualitativamente como mejora esta experiencia?</li>
+* ¿Es posible cunatificar cuantitativa y cualitativamente como mejora esta experiencia?
 
-<li>¿Qué recursos son necesarios para poder participar en una competición de este tipo?</li>
+*¿Qué recursos son necesarios para poder participar en una competición de este tipo?
 
-<li>¿Qué técnicas son adecuadas enseñar en el contexto de las competiciones internacionales de IC?</li>
+* ¿Qué técnicas son adecuadas enseñar en el contexto de las competiciones internacionales de IC?
 
-<li>¿Qué metodología utilizar para alcanzar este objetivo?</li>
-</ul>
+* ¿Qué metodología utilizar para alcanzar este objetivo?
+
 
 <h3>Enlaces relacionados</h3>
 
