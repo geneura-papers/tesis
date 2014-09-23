@@ -373,7 +373,7 @@ p{0.95\textwidth}}
 %\renewcommand{\contentsname}{Lista de Contenidos}
 %\renewcommand{\listfigurename}{Lista de Figuras}
 %\renewcommand{\listtablename}{Lista de Tablas}
-%\renewcommand{\bibname}{Bibliograf�a}
+%\renewcommand{\bibname}{Bibliograf\'ia}
 %\renewcommand{\partname}{Parte}
 %\renewcommand{\figurename}{Figura}
 %\renewcommand{\tablename}{Tabla}
@@ -405,6 +405,10 @@ p{0.95\textwidth}}
 \pagestyle{scrheadings}%{plain}
 
 \renewcommand{\labelenumii}{\arabic{enumii}.}
+
+% JCC fuerza un salto de linea dentro de la celda de una tabla
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
 %********************************************************************
 % Definiciones Captions
@@ -494,8 +498,41 @@ p{0.95\textwidth}}
 % \include{Chapters/appendixosgiliath}
 
 % JCC PDFs
-\includepdf[pages={-},scale=0.9,pagecommand={},offset=-0.7cm -0.7cm,
+% ---- Artículo 21
+\include{Chapters/20-paper-evolving-two}
+\setboolean{@twoside}{false}
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
  addtolist={1, table, {Evolving two-dimensional fuzzy systems}, tab:evolving}]{pdf/evolving.pdf}
+ 
+ % Página en blanco
+ \newpage\null\thispagestyle{empty}\newpage
+ 
+% ---- Artículo 2 
+\include{Chapters/20-paper-robot-competition}
+\setboolean{@twoside}{false}
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
+ addtolist={1, table, {From Classroom to Mobile Robots Competition Arena: An Experience on Artificial Intelligence Teaching}, tab:evolving}]{pdf/ijee2469ns.pdf} 
+ 
+ % Página en blanco
+ \newpage\null\thispagestyle{empty}\newpage
+ 
+% ---- Artículo 3 
+\include{Chapters/20-paper-ants-iwann}
+\setboolean{@twoside}{false}
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
+ addtolist={1, table, {Evolving the Strategies of Agents for the ANTS Game}, tab:evolving}]{pdf/ants_iwann2013.pdf}
+ 
+ % Página en blanco
+ \newpage\null\thispagestyle{empty}\newpage
+ 
+% ---- Artículo 4 
+\include{Chapters/20-paper-jcal}
+\setboolean{@twoside}{false}
+\includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
+ addtolist={1, table, {Open classroom: enhancing student achievement on artificial intelligence through an international online competition}, tab:evolving}]{pdf/jcal12075.pdf}
+ 
+  % Página en blanco
+ \newpage\null\thispagestyle{empty}\newpage
  
 % \includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
 %  addtolist={1, table, { Classroom to Mobile Robots Competition Arena: An experience on AI Teaching}, tab:robots}]{pdf/ijee2469ns.pdf}

@@ -1,6 +1,5 @@
 Chapters/*.aux
 FrontBackmatter/*.aux
-pdf/*.pdf
 tesis.m*
 *DS_Store
 
@@ -28,5 +27,5 @@ tesis.m*
 *.mtc1
 *.out
 tesis.out
-test_pygmentize.tex
+test_pygment ize.tex
 tesis.pdf
