@@ -463,12 +463,20 @@ p{0.95\textwidth}}
 }
 {
 %-----------------------------  PONER LETTRINE EN SECCIONES Y NO INDENT EN SUBSECCIONES!!!
-% -- \myPart{Introduction}\label{part:introduccion}
+\myPart{Introducci\'on}\label{part:introduccion}
 
 %----- Modificado por JCC
 % -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{\myChapter{Introduction}\label{chap:introduction}}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro-SPANISH}}{\myChapter{Introducci{\'o}n}\label{chap:introductionSPANISH}}
+\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/01-introduccion}}{\myChapter{Introducci{\'o}n}\label{chap:introduction}}
 % --\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/02-distributedEAs}}{\myChapter{Evolutionary Algorithms}\label{chap:distributedEAs}}
+
+\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/02-objetivos}}{\myChapter{Objetivos}\label{chap:objetivos}}
+
+\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/03-metodologia}}{\myChapter{Metodolog\'ia}\label{chap:metodologia}}
+
+\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/04-resultados}}{\myChapter{Resultados}\label{chap:resultados}}
+
+\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/05-conclusiones}}{\myChapter{Conclusiones}\label{chap:conclusiones}}
 
 %-----------------------------
 % -- \myPart{Materials and Methods}\label{part:metodoYmateriales}
@@ -533,19 +541,6 @@ p{0.95\textwidth}}
  
   % Página en blanco
  \newpage\null\thispagestyle{empty}\newpage
- 
-% \includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
-%  addtolist={1, table, { Classroom to Mobile Robots Competition Arena: An experience on AI Teaching}, tab:robots}]{pdf/ijee2469ns.pdf}
-% \includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
-%  addtolist={1, table, {Open classroom: enhancing student achievement on AI through an international online computation }, tab:cosmobot}]{pdf/jcal12075.pdf}
-% \includepdf[pages={-},scale=1.0,pagecommand={},offset=-0.5cm -0.5cm,
-%  addtolist={1, table, {Evolving the Strategies of Agents for the ANTS Game}, tab:iwann}]{pdf/ants_iwann2013.pdf}
-
-
-% \includepdf[pages={-}]{pdf/ijee2469ns.pdf}
-% \includepdf[pages={-}]{pdf/ants_iwann2013.pdf}
-% \includepdf[pages={-}]{pdf/evolving.pdf}
-
 
 % *******************************************************
 % Backmatter
