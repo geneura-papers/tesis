@@ -6,14 +6,7 @@
 
 \section{Objetivos de esta tesis} 
 
-\lettrine{E}l objetivo de esta tesis es crear una metodología para adaptar Algoritmos Evolutivos 
-(AEs) a entornos dinámicos, heterogéneos y basados en estándares. Esta metodología propone el uso de 
-Arquitectura Orientada a Servicios (AOS) como un nuevo paradigma para desarrollar AEs. Para validar
- esta metodología se usará para crear un {\em framework} que use todas las ventajas de este paradigma
- (enlace din{\'a}mico y distribuci{\'o}n y publicaci{\'o}n de interfaces utilizando estándares). Finalmente,
- esta metodología se usará para crear Algoritmos Evolutivos Orientados a Servicios (AEOS) en diferentes escenarios,
- donde se reflejarán estas ventajas.
-
+\lettrine{E}l objetivo de esta tesis es crear una metodología para inclu
 
 
 
@@ -21,51 +14,33 @@ Arquitectura Orientada a Servicios (AOS) como un nuevo paradigma para desarrolla
 
 
 Los objetivos que esta tesis quiere validar son los siguientes:
-\newcommand{\objectiveparadigmSPANISH}{Probar que el paradigma de la Arquitectura Orientada a Servicios puede ser utilizada para crear entornos
- para AEs distribuidos, dinámicos y basados en estándares}
+\newcommand{\objectiveparadigmSPANISH}{Probar que la inclusión de competiciones en el aula puede mejorar la experiencia de aprendizaje de la IA}
 
 
 \subsection*{Objetivo 1: \objectiveparadigmSPANISH}
 
-Los AEs definen un área en la que se aplican  distintas ramas de las ciencias de la computación, como el paralelismo y sistemas distribuidos,
- la adaptación de parámetros y el desarrollo de aplicaciones y herramientas. En consecuencia, el primer objetivo propone un nuevo paradigma que 
- permita tratar con algunos de los problemas presentes en este área: falta de estandarización y mecanismos para facilitar la integración,
- el dinamismo y la interoperatibilidad de sus componentes. En primer lugar, la clasificación tradicional de AEs y AEs distribuidos será presentada
- para clarificar sus elementos comunes. A continuación, se explicarán las nuevas tendencias en AEs (como P2P y basadas en {\em pools}), mostrando
- sus ventajas y deficiencias. Un nuevo pa\-ra\-dig\-ma, los Algoritmos Evolutivos Orientados a Servicios (AEOSs) será propuesto para tratar de paliar
- las desventajas detectadas en otros paradigmas.
+Las competiciones en IA pueden favorecer el aprendizade de técnicas que tradicionalmente se impartían de una forma teórica con baja implicación de los alumnos.
 
 
-\newcommand{\objectivemethodologySPANISH}{Proponer una metodología que sea capaz de adaptar exitosamente algoritmos evolutivos en sistemas distribuidos,
- dinámicos, heterogéneos y basados en estándares}
+\newcommand{\objectivemethodologySPANISH}{Proponer una metodología que ayude a los profesores responsables de asignaturas relacionadas con la IA a mejorar la experiencia
+de aprendizaje de sus alumnos}
 
 \subsection*{Objetivo 2: \objectivemethodologySPANISH} 
 
+Describir los recursos necesarios para desarrollar esta metodología de forma práctica.
 
-
-
-Esta metodología deberá facilitar la identificación, especificación, implementación y despliegue de servicios para crear AEOS. Esta metodología también 
-tendrá que tratar con las restricciones pro\-pias de los AE y SOA identificadas en el objetivo previo, para facilitar el desarrollo, integración
- y dinamismo.
-
-\newcommand{\objectiveframeworkSPANISH}{Validar la metodología usando una tecnología SOA}
+\newcommand{\objectiveframeworkSPANISH}{Validar la metodología a través de dos experiencias reales en el aula}
 \subsection*{Objetivo 3: \objectiveframeworkSPANISH}
 
 
-Para validar la metodología presentada en el objetivo anterior, ésta será aplicada para la creación de un framework (llamado OSGiLiath) utilizando un
- tecnología SOA específica: OSGi. Este framework será utilizado para abordar algunos de los problemas previamente detectados: enlace dinámico de servicios,
- pu\-bli\-ca\-ción de  interfaces de servicio usando estándares públicas y el ahorro de tiempo, eliminando la necesidad de escribir código específico para
- la distribución. En este objetivo, distintas tecnologías SOA se compararán para seleccionar la más apropiada para cada problema a resolver.
-
+Para validar la metodología se han realizado diferentes experiencias en el aula cuyos resultados han sido publicados en diferentes revistas científicas.
 
 \newcommand{\objectiveresearchSPANISH}{Probar que una implementación basada en SOA de algoritmos evolutivos distribuidos, dinámicos y basados en estándares
   tiene la capacidad de resolver de forma eficiente distintos problemas} %FERGU: OJO!! Añadir el problema de GP?
 
 
 \subsection*{Objetivo 4: \objectiveresearchSPANISH}
-El objetivo final de esta tesis es demostrar que los AEOSs pueden ser utilizados para obtener resultados de relevancia científica en distintos campos.
- La metodología y el framework serán usados en una serie de experimentos en adaptación dinámica de parámetros al hardware y la creación de bots
- competitivos para videojuegos.
+Como objetivo final de la tesis, se ha realizado un trabajo de investigación por parte de alumnos que han trabajado en este nuevo modelo de aprendizaje.
 
 
 \section{Estructura de la tesis}
@@ -74,56 +49,12 @@ Este capítulo ofrece una introducción a esta tesis, incluyendo su motivación y l
 
 A continuación se expone la estructura del resto de capítulos:
 
-El primer paso de esta tesis es probar que la Arquitectura O\-rien\-ta\-da a Servicios puede ser utilizado para crear entornos para AEs que sean distribuidos,
- dinámicos y basados en estándares (Objetivo 1). La razón para utilizar este tipo de entornos será explicada en el Capítulo \ref{chap:distributedEAs}, donde 
- se muestra cómo las nuevas tendencias en AEs distribuidos, como P2P y algoritmos basados en {\em pool}, requieren ciertos mecanismos que proporcionen 
- control dinámico de los nodos y arquitecturas heterogéneas. Además, serán explicados otros defectos de este tipo de entornos que pueden  abordarse, como 
- la falta de integración de los lenguajes y protocolos de comunicación.
+El primer paso de esta tesis ha consistido en el estudio de las técnicas de IA/IC utilizadas en el ámbito universitario. Fruto de este trabajo inicial se ha
+publicado el primer trabajo científico en revista internacional \cite{Vrivas2003Fuzzy}
+
+El segundo trabajo \cite{Carpio2011Classroom}, el tercer trabajo \cite{CarpioIwann2013} y el cuarto \cite{CarpioJcal2014}.
 
 
-
- SOA se explicará en el Capítulo \ref{chap:soa} como un posible paradigma para el desarrollo de este tipo de entornos distribuidos, dinámicos y basados 
- en estándares, al ofrecer mecanismos que fa\-ci\-li\-tan la estandarización, integración, la ciencia abierta y el dinamismo. Diferentes tecnologías y 
- metodologías para SOA serán explicadas. Por otra parte, se presentarán los requerimientos en SOA aplicados a la genericidad de los AEs, así como las 
- directrices para la creación de servicios para AEs que permitirán cumplir con el próximo objetivo: proponer una metodología que pueda adaptar con éxito
- algoritmos evolutivos a sistemas distribuidos, dinámicos y basados en estándares. Esta metodología, llamada SOA-EA, será presentada en el Capítulo
- \ref{chap:soaea}. SOA-EA propone varios pasos para crear Algoritmos Evolutivos Orientados a Servicios (AEOSs). Los pasos para la identificación, 
- especificación, implementación y desarrollo de servicios serán también presentados en este capítulo, junto con algunas directrices acerca de cómo 
- deberá ser diseñado como un servicio cada elemento de un AE.
-
-
-Para validar SOA-EA (objetivo 3), esta metodología será aplicada en el Capítulo  \ref{chap:osgiliath} para crear un framework (OSGiLiath) para el
- desarrollo de AEOSs utilizando una tecnología específica.
-
-Con el objetivo de mostrar el enlace automático de servicios, se presenta un experimento en el cual se activa y enlaza de forma adaptativa servicios 
-para incrementar el rendimiento de un AEOS. Se mostrarán diferentes formas de publicar servicios utilizando diferentes estándares, comparando los tiempos
- de trans\-mi\-sión de cada tecnología de distribución. Finalmente, se presenta un estudio comparativo de los tiempos de desarrollo con distintos frameworks
- para AE.
-
-
-OSGiLiath se utilizará en el Capítulo \ref{chap:adaptive} para desarrollar un nuevo método para la adaptación de parámetros de un AE distribuido
- (tamaño de la población) a la potencia computacional de los diferentes nodos en los que se ejecuta el algoritmo. Para efectuar este experimento,
- SOA-EA será utilizado para diseñar servicios para la creación de un AEOS descentralizado y basado en islas. De esta forma, se alcanzará el objetivo
- 4: probar que una implementación basada en SOA de algoritmos evolutivos distribuidos, dinámicos y basados en estándares tiene la capacidad de resolver
- de forma eficiente distintos problemas.
-
-
-En el siguiente capítulo (Capítulo \ref{chap:rts}), se utilizará OSGiLiath para crear AEOSs que generan bots competitivos para juegos RTS. SOA-EA será
- aplicada para la creación de servicios dinámicos, obteniendo resultados relevantes.
-
-
-Finalmente, el Capítulo \ref{chap:conclusions} resumirá la principales contribuciones de esta tesis y las futuras líneas de investigación.
-
-La Figura \ref{fig:intro:piramidSPANISH} muestra cómo la metodología se aplicará para probar todos los objetivos de esta tesis.
-
-
-
-\begin{SCfigure}[tb]
-\centering
- \includegraphics[scale =0.3] {gfx/intro/tesispiramide.pdf}
-\caption{Resumen de los objetivos de esta tesis}
-\label{fig:intro:piramidSPANISH}
-\end{SCfigure}
 
 
 
