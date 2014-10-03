@@ -3,6 +3,7 @@ FrontBackmatter/*.aux
 tesis.m*
 *DS_Store
 
+*.brf
 *.aux
 *.glo
 *.idx
