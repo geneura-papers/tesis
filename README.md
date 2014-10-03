@@ -10,7 +10,7 @@ Tesis: Inteligencia Computacional y juegos aplicados a la enseñanza
 
 * ¿Es posible mejorar la experiencia de aprendizaje de la Inteligencia Computacional (IC) a través de la participación en competiciones internacionales?
 
-* ¿Es posible cunatificar cuantitativa y cualitativamente como mejora esta experiencia?
+* ¿Es posible cuantificar cuantitativa y cualitativamente como mejora esta experiencia?
 
 * ¿Qué recursos son necesarios para poder participar en una competición de este tipo?
 
