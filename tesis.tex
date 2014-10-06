@@ -183,6 +183,8 @@
 % Language/strings for backrefs (change here, thanks, Lorenzo)
 %*******************************************************
 \renewcommand{\backrefnotcitedstring}{\relax}%(Not cited.)
+% Elimina todas estas cosas que estén comentadas, no hacen más que
+% estorbar - JJ 
 %\renewcommand{\backrefcitedsinglestring}[1]{(Citado en la p\'agina~#1.)}
 %\renewcommand{\backrefcitedmultistring}[1]{(Citado en las p\'aginas~#1.)}
 %\renewcommand{\backreftwosep}{ y~}
@@ -273,7 +275,7 @@ ${#1}^a$}%\btxnumeralfallback{spanish}{#1}}%
 \newcommand{\apriori}{\emph{a priori}\xspace}
 \newcommand{\aposteriori}{\emph{a posteriori}\xspace}
 \newcommand{\etal}{\emph{et al.}\xspace}
-\newcommand{\cronbach}{\mbox{$\alpha$--\emph{Cronbach}}\xspace}
+\newcommand{\cronbach}{\mbox{$\alpha$--\emph{Cronbach}}\xspace} % ¿Esto te sirve para algo? - JJ 
 
 \newcommand{\itemlabel}[1]{{\color{Maroon}{\textsc{#1}}}}
 
@@ -469,6 +471,8 @@ p{0.95\textwidth}}
 % -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{\myChapter{Introduction}\label{chap:introduction}}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/01-introduccion}}{\myChapter{Introducci{\'o}n}\label{chap:introduction}}
 
+% Los objetivos deberían ir antes de todo lo demás. La introducción,
+% detrás de los objetivos - JJ
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/02-objetivos}}{\myChapter{Objetivos}\label{chap:objetivos}}
 
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/03-metodologia}}{\myChapter{Metodolog\'ia}\label{chap:metodologia}}
