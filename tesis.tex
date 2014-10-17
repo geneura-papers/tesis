@@ -336,6 +336,7 @@ p{0.95\textwidth}}
 % Cabeceras
 %*******************************************************
 
+% Mini tablas de contenidos. Paquete minitoc
 %\def\ptctitle{Index}
 %\def\mtctitle{Index}
 %\def\stctitle{Index}
@@ -426,7 +427,6 @@ p{0.95\textwidth}}
 \renewcommand{\itemautorefname}{Item}
 % \newcommand*{\subfigureautorefname}{Figura}
 
-
 \pagenumbering{roman}
 \pagestyle{scrheadings}%{plain}
 
@@ -475,7 +475,7 @@ p{0.95\textwidth}}
 }
 
 
-
+\pdfbookmark[0]{Cap\'itulos}{Cap\'itulos}
 % *******************************************************
 % Mainmatter
 % *******************************************************
@@ -483,14 +483,14 @@ p{0.95\textwidth}}
 
 \ifthenelse{\boolean{TesisCompleta}}{
 %-----------------------------
-\myPart{IntroducciÃ³n}\label{part:introduccion}
+\myPart{Cap\'itulos}\label{part:capitulos}
 
 %REALMENTE tienes que escribir una introducciÃ³n. 
 % Aquí quedan todavía cosas rarunas - JJ
 }
 {
 %-----------------------------  PONER LETTRINE EN SECCIONES Y NO INDENT EN SUBSECCIONES!!!
-\myPart{Introducci\'on}\label{part:introduccion}
+\myPart{Cap\'itulos}\label{part:capitulos}
 
 %----- Modificado por JCC
 % -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{\myChapter{Introduction}\label{chap:introduction}}
@@ -579,10 +579,6 @@ p{0.95\textwidth}}
 % \include{Chapters/appendixosgi}
 % \include{Chapters/appendixosgiliath}
 
-
-% \includepdf[pages={-}]{pdf/ijee2469ns.pdf}
-% \includepdf[pages={-}]{pdf/ants_iwann2013.pdf}
-% \includepdf[pages={-}]{pdf/evolving.pdf}
 
 %\include{Chapters/apendiceC}
 %********************************************************************
