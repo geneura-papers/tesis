@@ -336,9 +336,12 @@ p{0.95\textwidth}}
 % Cabeceras
 %*******************************************************
 
-\def\ptctitle{Index}
-\def\mtctitle{Index}
-\def\stctitle{Index}
+%\def\ptctitle{Index}
+%\def\mtctitle{Index}
+%\def\stctitle{Index}
+\def\ptctitle{\'Indice}
+\def\mtctitle{\'Indice}
+\def\stctitle{\'Indice}
 \setlength{\mtcindent}{0pt}
 \renewcommand{\mtifont}{\normalsize\scshape\lsstyle}
 
@@ -407,6 +410,21 @@ p{0.95\textwidth}}
 \renewcommand\contentsname{Tabla de Contenidos}
 \renewcommand\appendixname{Ap\'endice}
 \renewcommand\bibname{Referencias}
+\renewcommand{\partname}{Parte}
+\renewcommand{\indexname}{Indice}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\figureautorefname}{Figura}
+\renewcommand{\tableautorefname}{Tabla}
+\renewcommand{\paragraphautorefname}{P\'arrafo}
+\renewcommand{\subparagraphautorefname}{Subp\'arrafo}
+\renewcommand{\footnoteautorefname}{Nota al pie}
+%\renewcommand{\FancyVerbLineautorefname}{}
+\renewcommand{\theoremautorefname}{Teorema}
+\renewcommand{\appendixautorefname}{Ap\'endice}
+\renewcommand{\equationautorefname}{Ecuaci\'on}
+\renewcommand{\itemautorefname}{Item}
+% \newcommand*{\subfigureautorefname}{Figura}
 
 
 \pagenumbering{roman}
@@ -430,6 +448,7 @@ p{0.95\textwidth}}
 %*******************************************************
 % \include{FrontBackmatter/DirtyTitlepage}
 \pagecolor{white}
+\pdfbookmark[1]{Portada}{Portada}
 \include{FrontBackmatter/SignedTitlepage}%\include{FrontBackmatter/Titlepage}
 \include{FrontBackmatter/Titleback}
 \cleardoublepage
