@@ -163,6 +163,16 @@
 \pagecolor{white}
 \usepackage[final]{pdfpages}
 
+% 
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+%\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+%\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+%\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+%\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+%\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+%
+
+
 %\lstset{
 %basicstyle=\ttfamily \scriptsize,
 %backgroundcolor=\color{ultralightOrange},
@@ -364,6 +374,7 @@ p{0.95\textwidth}}
 \newcounter{IncluyeCapitulo}
 \setcounter{IncluyeCapitulo}{2}
 
+\includeonly{Chapters/01-introduccion}
 
 % ********************************************************************
 % ********************************************************************
@@ -373,6 +384,7 @@ p{0.95\textwidth}}
 % ********************************************************************
 % ********************************************************************
 \begin{document}
+
 \frenchspacing
 \raggedbottom
 %\selectlanguage{spanish}
@@ -436,6 +448,9 @@ p{0.95\textwidth}}
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 
+  
+  
+
 %********************************************************************
 % Definiciones Captions
 %*******************************************************
@@ -446,6 +461,9 @@ p{0.95\textwidth}}
 %********************************************************************
 % Frontmatter
 %*******************************************************
+
+
+
 % \include{FrontBackmatter/DirtyTitlepage}
 \pagecolor{white}
 \pdfbookmark[1]{Portada}{Portada}
@@ -595,5 +613,6 @@ p{0.95\textwidth}}
 % ********************************************************************
 % Game Over: Restart, Restore or Quit?
 %*******************************************************
+\listoftodos[Notes]
 \end{document}
 % ********************************************************************
