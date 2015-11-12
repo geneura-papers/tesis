@@ -511,17 +511,21 @@ p{0.95\textwidth}}
 \myPart{Cap\'itulos}\label{part:capitulos}
 
 %----- Modificado por JCC
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{\myChapter{Introduction}\label{chap:introduction}}
+% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{
+% \myChapter{Introduction}\label{chap:introduction}}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/01-introduccion}}{\myChapter{Introducci{\'o}n}\label{chap:introduction}}
 
 % Los objetivos deberían ir antes de todo lo demás. La introducción,
 % detrás de los objetivos - JJ
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/02-objetivos}}{\myChapter{Objetivos}\label{chap:objetivos}}
 
+% \myPart{Metodolog{\'i}a}\label{part:parteMetodologia}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/03-metodologia}}{\myChapter{Metodolog\'ia}\label{chap:metodologia}}
 
+% \myPart{Resultados}\label{part:parteResultados}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/04-resultados}}{\myChapter{Resultados}\label{chap:resultados}}
 
+% \myPart{Conclusiones}\label{part:parteConclusiones}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/05-conclusiones}}{\myChapter{Conclusiones}\label{chap:conclusiones}}
 
 %-----------------------------
