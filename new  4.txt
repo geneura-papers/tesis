@@ -1,3 +1,0 @@
-@echo off
-set PYTHONPATH=C:\Python27
-%PYTHONPATH%\python.exe %PYTHONPATH%Scripts\pygmentize %*

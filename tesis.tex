@@ -51,9 +51,7 @@
 % KOMA-Script setup (todo)
 % ********************************************************************
 \KOMAoptions{%
-%    DIV=15,%
     BCOR=12mm,%
-    %paper=b5,%
     fontsize=11pt,%
     cleardoublepage=empty,%
     headsepline=true,
@@ -62,7 +60,6 @@
     headlines=2.5,%
     open=right,%
     numbers=noenddot%
-%    abstract=false%
 }
 
 \setlength{\paperwidth}{16.828cm} % set size for latex
@@ -82,7 +79,6 @@
 
 % added by JCC to use Pygmentize 
 % http://tex.stackexchange.com/questions/23458/how-to-install-syntax-highlight-package-minted-on-windows-7
-% \newcommand\TestAppExists[3]{#2}
 \usepackage{minted}
 
 
@@ -117,10 +113,8 @@
 \usepackage[mathcal]{euscript}
 \usepackage{latexsym}
 \usepackage{relsize}
-%\usepackage{amsmath} %Incompatible con \usepackage{relsize}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-%\usepackage[sort]{cite}
 \usepackage[right]{eurosym}
 \usepackage[top]{mcaption}
 \usepackage[margincaption]{sidecap}
@@ -152,8 +146,6 @@
 \usepackage{algorithmic}
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}
 
-%\usepackage[a4,frame,center]{crop} %,cross
-
 \input{coloricos} %OJO CON ESTO (EVOSOFT) vs highlight.sty de SOA-SOCO
 \usepackage[final]{listings}
 
@@ -163,25 +155,8 @@
 \pagecolor{white}
 \usepackage[final]{pdfpages}
 
-% 
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
-%\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
-%\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
-%\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
-%\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
-%\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
-%
 
-
-%\lstset{
-%basicstyle=\ttfamily \scriptsize,
-%backgroundcolor=\color{ultralightOrange},
-%language=c++,
-%frame=single,
-%stringstyle=\ttfamily,
-%showstringspaces=false
-%} %DENTRO DE ESO HAY OTRO LISTINGS QUE SE COME LO DE ARRIBA, PERO NO SE SI AFECTA OTRAS COSAS...
-%*******************************************************
 \usepackage{classicthesis-ldpkg}
 %*******************************************************
 % Options for classicthesis.sty:
@@ -193,24 +168,21 @@
 % Language/strings for backrefs (change here, thanks, Lorenzo)
 %*******************************************************
 \renewcommand{\backrefnotcitedstring}{\relax}%(Not cited.)
-% Elimina todas estas cosas que estén comentadas, no hacen más que
-% estorbar - JJ 
-%\renewcommand{\backrefcitedsinglestring}[1]{(Citado en la p\'agina~#1.)}
-%\renewcommand{\backrefcitedmultistring}[1]{(Citado en las p\'aginas~#1.)}
-%\renewcommand{\backreftwosep}{ y~}
-%\renewcommand{\backreflastsep}{ y~}
+
 % ********************************************************************
 % Setup and Finetuning
 %*******************************************************
 \newlength{\abcd} % for ab..z string length calculation
 \newcommand{\myfloatalign}{\centering} % how all the floats will be aligned
 \setlength{\extrarowheight}{3pt} % increase table row height
+
 % ********************************************************************
 % Captions look and feel
 %*******************************************************
 \DeclareCaptionFont{titlecolor}{\color{titlecolor}\fontfamily{pbk}\selectfont}
 \DeclareCaptionFont{alternateTitlecolor}{\color{alternateTitlecolor}\fontfamily{pbk}\selectfont}
 \captionsetup{justification=RaggedRight,format=plain,labelsep=newline,font=scriptsize,labelfont=titlecolor,textfont=alternateTitlecolor}%
+
 % ********************************************************************
 % Where to look for graphics
 %*******************************************************
@@ -224,8 +196,6 @@
     plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
     hypertexnames=true, pdfhighlight=/O,%hyperfootnotes=true,%nesting=true,%frenchlinks,%
     urlcolor=colorCorporativoOscuro, linkcolor=alternateTitlecolor, citecolor=Maroon, %pagecolor=RoyalBlue,%
-    % uncomment the following line if you want to have black links (e.g., for printing)
-    %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
     pdftitle={\myTitle},%
     pdfauthor={\textcopyright\ \myName, \myUni, \myFaculty},%
     pdfsubject={},%
@@ -254,59 +224,31 @@ ${#1}^a$}%\btxnumeralfallback{spanish}{#1}}%
 % Renombrar al español algunos identificadores
 %*******************************************************
 
-%\renewcommand{\contentsname}{Lista de Contenidos}
-%\renewcommand{\listfigurename}{Lista de Figuras}
-%\renewcommand{\listtablename}{Lista de Tablas}
-%\renewcommand{\bibname}{Bibliograf\'ia}
-%\renewcommand{\partname}{Parte}
-%\renewcommand{\figurename}{Figura}
-%\renewcommand{\tablename}{Tabla}
-%\newcommand{\tablaname}{Tabla}
-%\renewcommand{\cfttabpresnum}{\tablaname~}
-
 \renewcommand{\person}[1]{{\color{Maroon}{#1}}}
 
 \selectbiblanguage{spanish}
 
-%\renewcommand{\spacedallcaps}[1]{\textsc{\MakeTextUppercase{#1}}}
-%\renewcommand{\spacedlowsmallcaps}[1]{\textsc{\MakeTextUppercase{#1}}}
-
 %********************************************************************
 % Tipos de letras
 %*******************************************************
-
-%\renewcommand{\encodingdefault}{T1}
-%\renewcommand{\familydefault}{gm}%papyrus}%bradley} %pbk,ppl
-%\renewcommand{\seriesdefault}{b}
-
-%\renewcommand{\rmdefault}{bradley}
 
 \newcommand{\Copyright}{{\small$^\mathrm{\copyright}$}~}
 \newcommand{\apriori}{\emph{a priori}\xspace}
 \newcommand{\aposteriori}{\emph{a posteriori}\xspace}
 \newcommand{\etal}{\emph{et al.}\xspace}
 \newcommand{\cronbach}{\mbox{$\alpha$--\emph{Cronbach}}\xspace} % ¿Esto te sirve para algo? - JJ 
-
 \newcommand{\itemlabel}[1]{{\color{Maroon}{\textsc{#1}}}}
-
 \newcommand{\mysize}{\tiny}
 
 %********************************************************************
 % Colores
 %*******************************************************
 
-%\definecolor[named]{ultralightOrange}{rgb}{1,.94,.72}
-%\definecolor[named]{highlightOrange}{rgb}{1,.86,.29}
-%\definecolor[named]{lightOrange}{rgb}{1,.45,0}
 \definecolor[named]{darkOrange}{rgb}{.8,.3,0}
 
 \definecolor[named]{minimumOrange}{rgb}{1,.976,.474}
 \definecolor[named]{ugrOrange}{rgb}{.945,.365,.165} % PANTONE 179: {R:241, G:93, B:42}
-%\definecolor[named]{ugrOrange}{cmyk}{0,.309,.368,0} % PANTONE 179: {C:0, M:79, Y:94, K:0}
 \definecolor[named]{ugrGray}{rgb}{.463,.482,.494}
-
-%\definecolorseries{ugrOrangeSerie}{rgb}{last}{ugrOrange}{white}
-%\resetcolorseries[10]{ugrOrangeSerie}
 
 \colorlet{ultralightOrange}{ugrOrange!5!minimumOrange}
 \colorlet{highlightOrange}{ugrOrange!25!minimumOrange}
@@ -336,34 +278,20 @@ p{0.95\textwidth}}
 
 \newcolumntype{C}{%
 >{\columncolor{colorCorporativoSuave}}p{\textwidth}}
-%>{\columncolor{colorCorporativo}}p{4pt}}
 
 \newcolumntype{D}{%
 >{\color{black}\fontfamily{pbk}\selectfont\columncolor{colorCorporativoSuave}}p{8em}}
-%>{\columncolor{colorCorporativo}}p{4pt}
 
 %********************************************************************
 % Cabeceras
 %*******************************************************
 
 % Mini tablas de contenidos. Paquete minitoc
-%\def\ptctitle{Index}
-%\def\mtctitle{Index}
-%\def\stctitle{Index}
 \def\ptctitle{\'Indice}
 \def\mtctitle{\'Indice}
 \def\stctitle{\'Indice}
 \setlength{\mtcindent}{0pt}
 \renewcommand{\mtifont}{\normalsize\scshape\lsstyle}
-
-%\typearea[current]{last}
-%\typearea[current]{current}
-%\setlength{\topmargin}{-4em}
-%\setlength{\textheight}{590.80026pt}%{595.80026pt}
-%\setlength{\tabcolsep}{1em}
-
-
-
 
 \newboolean{TesisCompleta}
 \setboolean{TesisCompleta}{false}
@@ -387,27 +315,8 @@ p{0.95\textwidth}}
 
 \frenchspacing
 \raggedbottom
-%\selectlanguage{spanish}
-%\renewcommand{\contentsname}{Lista de Contenidos}
-%\renewcommand{\listfigurename}{Lista de Figuras}
-%\renewcommand{\listtablename}{Lista de Tablas}
-%\renewcommand{\bibname}{Bibliograf\'ia}
-%\renewcommand{\partname}{Parte}
-%\renewcommand{\figurename}{Figura}
-%\renewcommand{\tablename}{Tabla}
-%\renewcommand{\figureautorefname}{Figura}
-%\renewcommand{\tableautorefname}{Tabla}
-%\renewcommand{\paragraphautorefname}{P\'arrafo}
-%\renewcommand{\subparagraphautorefname}{Subp\'arrafo}
-%\renewcommand{\footnoteautorefname}{Nota al pie}
-%\renewcommand{\FancyVerbLineautorefname}{}
-%\renewcommand{\theoremautorefname}{Teorema}
-%\renewcommand{\appendixautorefname}{Ap\'endice}
-%\renewcommand{\equationautorefname}{Ecuaci\'on}
-%\renewcommand{\itemautorefname}{Item}
-%\newcommand*{\subfigureautorefname}{Figura}
 
-% Parï¿½metros para Lettrine (lo de la primera letra mï¿½s grande en los comienzos de los capï¿½tulos)
+% Parámetros para Lettrine (lo de la primera letra más grande en los comienzos de los capítulos)
 %
 \setcounter{DefaultLines}{2}
 \renewcommand{\DefaultLoversize}{0.1} %0.25
@@ -432,12 +341,9 @@ p{0.95\textwidth}}
 \renewcommand{\paragraphautorefname}{P\'arrafo}
 \renewcommand{\subparagraphautorefname}{Subp\'arrafo}
 \renewcommand{\footnoteautorefname}{Nota al pie}
-%\renewcommand{\FancyVerbLineautorefname}{}
 \renewcommand{\theoremautorefname}{Teorema}
 \renewcommand{\appendixautorefname}{Ap\'endice}
 \renewcommand{\equationautorefname}{Ecuaci\'on}
-%\renewcommand{\itemautorefname}{Item}
-% \newcommand*{\subfigureautorefname}{Figura}
 
 \pagenumbering{roman}
 \pagestyle{scrheadings}%{plain}
@@ -447,9 +353,6 @@ p{0.95\textwidth}}
 % JCC fuerza un salto de linea dentro de la celda de una tabla
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-
-  
-  
 
 %********************************************************************
 % Definiciones Captions
@@ -461,18 +364,12 @@ p{0.95\textwidth}}
 %********************************************************************
 % Frontmatter
 %*******************************************************
-
-
-
-% \include{FrontBackmatter/DirtyTitlepage}
 \pagecolor{white}
 \pdfbookmark[1]{Portada}{Portada}
 \include{FrontBackmatter/SignedTitlepage}
-% \include{FrontBackmatter/Titlepage}
 \include{FrontBackmatter/Titleback}
 \cleardoublepage
 \include{FrontBackmatter/SignedTitlepage}
-%\cleardoublepage
 \include{FrontBackmatter/Vistobueno}
 \cleardoublepage
 \include{FrontBackmatter/Declaration}
@@ -493,7 +390,6 @@ p{0.95\textwidth}}
 
 }
 
-
 \pdfbookmark[0]{Cap\'itulos}{Cap\'itulos}
 % *******************************************************
 % Mainmatter
@@ -504,47 +400,20 @@ p{0.95\textwidth}}
 %-----------------------------
 \myPart{Cap\'itulos}\label{part:capitulos}
 
-%REALMENTE tienes que escribir una introducciÃ³n. 
-% Aquí quedan todavía cosas rarunas - JJ
 }
 {
 %-----------------------------  PONER LETTRINE EN SECCIONES Y NO INDENT EN SUBSECCIONES!!!
 \myPart{Cap\'itulos}\label{part:capitulos}
 
 %----- Modificado por JCC
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/00-intro}}{
-% \myChapter{Introduction}\label{chap:introduction}}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/01-introduccion}}{\myChapter{Introducci{\'o}n}\label{chap:introduction}}
 
-% Los objetivos deberían ir antes de todo lo demás. La introducción,
-% detrás de los objetivos - JJ
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/02-objetivos}}{\myChapter{Objetivos}\label{chap:objetivos}}
 
-% \myPart{Metodolog{\'i}a}\label{part:parteMetodologia}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/03-metodologia}}{\myChapter{Metodolog\'ia}\label{chap:metodologia}}
-
-% \myPart{Resultados}\label{part:parteResultados}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/04-resultados}}{\myChapter{Resultados}\label{chap:resultados}}
 
-% \myPart{Conclusiones}\label{part:parteConclusiones}
 \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/05-conclusiones}}{\myChapter{Conclusiones}\label{chap:conclusiones}}
-
-%-----------------------------
-% -- \myPart{Materials and Methods}\label{part:metodoYmateriales}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/03-soa}}{\myChapter{Service Oriented Architecture: technologies and restrictions for designing services for EAs}\label{chap:soa}}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/04-soaea}}{\myChapter{A methodology for developing services for EAs}\label{chap:soaea}}
-%-----------------------------
-% -- \myPart{Experimental Results}\label{part:resultadosExperimentales}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/05-osgiliath}}{\myChapter{Implementation of SOA-EA}\label{chap:osgiliath}}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/06-adaptive}}{\myChapter{Parameter adaptation in heterogeneous machines}\label{chap:adaptive}}
-%\ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/07-art}}{\myChapter{HSV and RGB comparison in Evolutionary Art}\label{chap:art}}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/08-rts}}{\myChapter{Generation of bots for RTS games using Genetic Programming}\label{chap:rts}}
-
-%-----------------------------
-% -- \myPart{Conclusions}\label{part:discusionYconclusiones}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/09-conclusions}}{\myChapter{Conclusions and future work}\label{chap:conclusions}}
-% -- \ifthenelse{\equal{\value{IncluyeCapitulo}}{2}}{\include{Chapters/09-conclusions-SPANISH}}{\myChapter{Conclusiones y trabajo futuro}\label{chap:conclusionsSPANISH}}
-%\ifthenelse{\equal{\value{IncluyeCapitulo}}{12}}{\include{Chapters/conclusiones}}{\myChapter{Conclusiones}\label{chap:conclusiones}}
 
 }
 
@@ -553,8 +422,6 @@ p{0.95\textwidth}}
 % Publicaciones
 % *******************************************************
 \myPart{Publicaciones}
-% \include{Chapters/appendixosgi}
-% \include{Chapters/appendixosgiliath}
 
 \myChapter{Publicaciones}\label{chap:publicaciones}
  
@@ -562,26 +429,26 @@ p{0.95\textwidth}}
 \vfill
 
 % JCC PDFs
-% ---- ArtÃ­culo 1
+% ---- Artículo 1
 \include{Chapters/20-paper-evolving-two}
 \setboolean{@twoside}{false}
-%-- ArtÃ­culos comentados para realizar la compilaciÃ³n mÃ¡s rÃ¡pido
+%-- Artículos comentados para realizar la compilaciÃ³n mÃ¡s rÃ¡pido
 \includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
 addtolist={1, table, {Evolving two-dimensional fuzzy systems}, tab:evolving}]{pdf/evolving.pdf}
  
- % PÃ¡gina en blanco
+ % Página en blanco
  \newpage\null\thispagestyle{empty}\newpage
  
-% ---- ArtÃ­culo 2 
+% ---- Artículo 2 
 \include{Chapters/20-paper-robot-competition}
 \setboolean{@twoside}{false}
 \includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
 addtolist={1, table, {From Classroom to Mobile Robots Competition Arena: An Experience on Artificial Intelligence Teaching}, tab:evolving}]{pdf/ijee2469ns.pdf} 
  
- % PÃ¡gina en blanco
+ % Página en blanco
  \newpage\null\thispagestyle{empty}\newpage
  
-% ---- ArtÃ­culo 3 
+% ---- Artículo 3 
 \include{Chapters/20-paper-ants-iwann}
 \setboolean{@twoside}{false}
 \includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
@@ -590,13 +457,13 @@ addtolist={1, table, {Evolving the Strategies of Agents for the ANTS Game}, tab:
  % PÃ¡gina en blanco
  \newpage\null\thispagestyle{empty}\newpage
  
-% ---- ArtÃ­culo 4 
+% ---- Artículo 4 
 \include{Chapters/20-paper-jcal}
 \setboolean{@twoside}{false}
 \includepdf[pages={-},scale=1.0,pagecommand={},offset=0 0,
 addtolist={1, table, {Open classroom: enhancing student achievement on artificial intelligence through an international online competition}, tab:evolving}]{pdf/jcal12075.pdf}
  
-  % PÃ¡gina en blanco
+  % Página en blanco
  \newpage\null\thispagestyle{empty}\newpage
 
 % *******************************************************
@@ -604,20 +471,15 @@ addtolist={1, table, {Open classroom: enhancing student achievement on artificia
 % *******************************************************
 \appendix
 \myPart{Ap\'endice}
-% \include{Chapters/appendixosgi}
-% \include{Chapters/appendixosgiliath}
 
-
-%\include{Chapters/apendiceC}
 %********************************************************************
 % Other Stuff in the Back
 %*******************************************************
 \cleardoublepage
 \include{FrontBackmatter/Bibliography}
-%\cleardoublepage
-%\include{FrontBackmatter/Declaration}
+
 \cleardoublepage
-%La contraportada tiene que estar en pÃ¡gina par!!
+%La contraportada tiene que estar en página par!!
 % \include{FrontBackmatter/DirtyBackpage}
 
 % ********************************************************************
