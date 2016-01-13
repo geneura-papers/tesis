@@ -1,0 +1,1031 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Inteligencia Artificial y Juegos Aplicados a la Enseñanza</title>
+
+		<meta name="description" content="Tesis: Inteligencia Artificial y Juegos Aplicados a la Enseñanza">
+		<meta name="author" content="José Carpio Cañada">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		
+		    <!-- JavaScript -->
+        <script src="ants/jquery.min.js"></script>
+        <script src="ants/jquery.tablesorter.min.js"></script>
+        <script src="ants/jquery.countdown.min.js"></script>
+        <script src="ants/tab_sync.js"></script>
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+      
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+			<p>&nbsp</p>
+            <small><a href="#/1">&nbsp;.&nbsp;</a></small>
+       
+	
+
+				<section>
+				    <img src="img/logo_ugr.png" width="200px" style="background:none; border:none; box-shadow:none;">
+				    <h5>Universidad de Granada</h5>
+				    <p><h5><small>Departamento de Arquitectura y Tecnología de Computadores</small></h5></p>
+					<h4>Tesis</h4>
+					<h3>Inteligencia Computacional y Juegos Aplicados a la Enseñanza</h2>
+					<p>
+						<small>Presentado por <a href="http://www.uhu.es/jose.carpio">José Carpio Cañada</a></small>
+						<small>Directores: Juán Julián Merelo Guervós y Victor Manuel Rivas Santos</small>
+						<!-- small>Departamento de Arquitectura y Tecnología de Computadores</small -->
+					</p>
+					
+					<aside class="notes">
+                    Estimados miembros del tribunal, con su permiso, me dispongo a comenzar
+ 					la exposición de la tesis titulada "Inteligencia Computacional y Juegos aplicados a la Enseñanza".  					
+                    </aside>					
+				</section>
+
+				<section>
+					<h4>Índice</h4>
+					<ol style='list-style-type:decimal;'>
+						<h3><li><a href="#/introduccion">Introducción</a></li></h3>
+						<h3><li><a href="#/objetivos">Objetivos</a></li></h3>
+						<h3><li><a href="#/metodologia">Metodología</a></li></h3>
+						<h3><li><a href="#/resultados">Discusión y resultados</a></li></h3>
+						<h3><li><a href="#/conclusiones">Conclusiones</a></li></h3>						
+					</ol>
+					
+				    <aside class="notes">
+                    La presentación se organiza en las siguientes secciones: 1. Introducción, dónde se destacan los elementos que motivan
+                    la presente tesis doctoral, 2. Objetivos, donde explicaré los hitos a alcanzar propuestos en el desarrollo de la tesis, 
+					3. Metodología, donde explicaré el camino seguido para alcanzar los objetivos, 4. Discusión y resultados, donde se destacarán
+                    aquellos resultados más relevantes obtenidos y 5. Conclusiones, donde se analizaré los hitos alcanzados y las lineas de trabajos futuros.   					
+                    </aside>	
+
+				</section>
+
+			    <!--section>
+				   <h2>Capítulos</h2>
+			       <img src="img/contenidos.png" style="background:none; border:none; box-shadow:none;">
+				</section -->				
+
+				<section id="introduccion">
+					<h2>Introducción</h2>
+					<!-- img src="img/logo_intro.png" style="background:none; border:none; box-shadow:none;" -->
+					
+					<aside class="notes">
+                    Sin más, paso a describir los elementos que motivan el desarrollo de la tesis. Empezaré con 
+					una definición de Inteligencia Computacional para continuar posteriormente con aspectos de
+					educación formal e informal y el uso de juegos para mejorar el proceso de aprendizaje de la
+					Inteligencia Computacional.
+                    </aside>
+				</section>
+				
+				<section>
+				<h4>Tesis</h4>
+				<p>&nbsp;</p>
+				<h3><b>Metodología</b></h3> que utiliza la <h3><b>mecánica de los juegos</b></h3> y la 
+				participación en <h3><b>competiciones</b></h3> para enseñar <h3><b>Inteligencia Computacional</b></h3>
+				<aside class="notes">
+				En la presente tesis hemos desarrollado una metodología que utiliza la mecánica de los juegos y la 
+				participación en competiciones de Inteligencia Artificial con el fin de mejorar la experiencia de 
+				aprendizaje de los alumnos en este ámbito. A continuación pasaré a describir algunos conceptos
+                necesarios para comprender el trabajo realizado. 				
+				</aside>
+				</section>
+				
+				<section id="inteligencia_computacional">
+				<h4>Definición</h4>
+				<p>&nbsp;</p>
+				<h3><b>Inteligencia Computacional</b></h3></span>
+                <ul>
+				<li>Redes Neuronales
+				<li>Computación Evolutiva
+				<li>Inteligencia Emergente
+				<li>Sistemas Inmunes Artificiales
+				<li>Sistemas Difusos
+				</ul>
+				<aside class="notes">La Inteligencia Computacional
+                es una rama de la Inteligencia Artificial que combina elementos
+                de aprendizaje, adaptación, evolución y lógica difusa para crear
+                programas inteligentes. La Inteligencia Computacional
+                utiliza técnicas como las Redes Neuronales, la Computación Evolutiva, la Inteligencia
+                Emergente o Swarm Intelligence, los Sistemas Inmunes
+                Artificiales o los Sistemas Difusos
+				</aside>
+                </section>
+
+                <!-- section>
+                <h3> La <b>Inteligencia Computacional</b>
+                utiliza técnicas
+                como las <b>Redes Neuronales</b>, la <b>Computación Evolutiva</b>, la <b>Inteligencia
+                Emergente</b> o <b>Swarm Intelligence</b>, los <b>Sistemas Inmunes
+                Artificiales</b> o los <b>Sistemas Difusos</b>.</h3>
+				
+			    <aside class="notes">
+                    Una vez introducido el concepto de Inteligencia Computacional paso a describir algunas características
+					de la educación formal e informal.
+                    </aside>
+				</section -->
+				
+				
+				<section id="gamificacion">
+				<h4>Definición</h4>
+				<p>&nbsp;</p>
+				<h3><b>Gamificación</b></h3></span>
+                o <b>ludificación</b> se utiliza
+para referirnos al <b>uso de mecánicas de juegos</b> en <b>ambientes</b> o entornos <b>no lúdicos</b>.</h3>
+<p>&nbsp;</p>
+<small><h4><b>Sebastian Deterding y otros</b>: From game design elements to gamefulness: defining gamification.</h4></small>
+				<aside class="notes">
+				</aside>
+                </section>
+				
+				
+				
+				
+				<!-- section>
+				<h3>El concepto de <b>gamificación</b> o <b>ludificación</b> se utiliza
+para referirnos al <b>uso de mecánicas de juegos</b> en <b>ambientes</b> o entornos <b>no lúdicos</b>.</h3>
+                <p>&nbsp;</p>
+                <small><h4><b>Sebastian Deterding y otros</b>: From game design elements to gamefulness: defining gamification.</h4></small>
+				</section -->
+				
+				<section>
+				
+				<h3>Motivación</h3>
+				</section>
+				
+				
+				<section id="motivacion">
+				<!-- h4>Motivación</h4>
+				<p>&nbsp;</p -->
+				<h3>
+				La <b>educación formal</b> se caracteriza por un <b>modelo</b> 
+que presenta <b>objetivos, contenidos y metodologías
+rígidas</b> para profesores y estudiantes.</h3>
+                <p>&nbsp;</p>
+                <small><h4><b>Claudio Zaki Dib</b>: Formal, non-formal and informal education:
+Concepts/applicability.</h4></small>
+
+                <aside class="notes">
+				Como veremos a continuación, la educación formal presenta algunos inconvenientes
+				</aside>
+				</section>
+				
+				<section>
+				<h4><b>La educación formal</b> solo <b>se adapta</b> a un</h4>
+				<h2><b>18%</b> <h4>de estudiantes <b>no universitarios</b></h4>
+				<h4>y a un</h4>
+				<h2><b>5.1%</b></h2> <h4>de los estudiantes <b>universitarios</b>.</h4>
+				<p>&nbsp;</p>
+				<small><h4>
+				<b>James A Banks y otros</b>: In and out of
+school in diverse environments.</h4>
+				</small>
+				
+                <aside class="notes">
+				Además de la falta de adaptación encontramos otros factores importantes
+				</aside>				
+				</section>
+				
+				<!-- section>
+				<h2>Definiciones</h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<h3><b>Educación informal</b></h3></span>
+                <ul>
+				<li>Modelo rígido 
+				</ul>
+				<aside class="notes">
+                La educación formal se caracteriza por un modelo 
+que presenta objetivos, contenidos y metodologías
+rígidas para profesores y estudiantes.
+				</aside>
+                </section -->
+				
+			<section>
+				<h3>
+				Sin embargo, la <b>educación informal </b>permite a los estudiantes participar en su <b>aprendizaje</b>
+de <b>forma proactiva</b> a través de metodologías flexibles y con diferentes
+estilos de aprendizaje.
+				</h3>
+				
+				<small><h4><b>Baiyun Chen and Thomas Bryer</b>: Investigating instructional
+strategies for using social media in formal and informal learning.</h4></small>
+				</section>
+				
+				<section>
+				<h3>La <b>educación informal</b> y el <b>aprendizaje</b> a través del
+<b>juego</b> permite al alumno <b>construir</b> su propio <b>conocimiento</b>,
+basado en la <b>comprensión</b> de sus <b>propias experiencias</b>.</h3>
+                <p>&nbsp;</p>  
+                <small><h4><b>George W Gagnon and Michelle Collay</b>: Constructivist learning
+design: Key questions for teaching to standards.</h4></small>
+
+                <aside class="notes">
+				Veamos a continuación otra definición importante: Gamificación
+				</aside>
+
+				</section>			
+				
+<section>
+<h3>
+ Los <b>juegos</b> en la enseñanza <b>proporcionan</b>
+<b>espontaneidad</b>, <b>flexibilidad</b> e <b>interactividad</b> apoyando así
+la experiencia de aprendizaje.</h3>
+                <p>&nbsp;</b>
+                <small><h4><b>David G Moursund</b>: Introduction to using games in education:
+A guide for teachers and parents.</h4></small>
+				</section>
+
+				<section>
+				<h3><b>Alan Turing</b> establece el <b>primer juego</b> que podía
+ser <b>jugado</b> de forma automática <b>por máquinas</b> utilizando <b>algoritmos
+lógicos.</b></h3>         <p>&nbsp;</p> 
+                <small><h4><b>Alan M Turing</b>: Computing machinery and intelligence</h4></small>
+				</section>
+				
+				<section>
+				<h3>Este hecho, transformó los <b>juegos</b> en una <b>herramienta</b> exitosa
+ <b>para enseñar</b> gran variedad de <b>métodos prácticos</b>
+gracias a su <b>habilidad</b> para <b>motivar</b> a los estudiantes.</h3>
+</section>
+
+				
+					<section>
+				<h3>La
+<b>motivación</b> representa un <b>factor clave</b> para <b>aprender</b> y obtener
+<b>resultados académicos exitosos.</b></h3>
+                <p>&nbsp;</p> 
+                <small><h4><b>Kourosh Amrai y otros</b>: The relationship between academic motivation
+and academic achievement students</h4></small>
+
+                <aside class="notes">
+				siguiendo con la educación informal
+				</aside>
+				</section>			
+
+				
+			    <!--section>
+					<h3>Hablar sobre las referencias más importantes de juegos y educación y juegos e IA </h3>
+					
+				</section>
+
+												
+			    <section>
+					<h3>Hablar de la fase inicial y el artículo Evolving Fuzzy Systems</h3>
+					
+				</section -->
+				
+				<!-- section data-background="img/punto_inicial.png">
+				    <h2>Punto de partida</h2>
+	                <h3>¿Podemos mejorar el proceso de aprendizaje de los alumnos de Inteligencia Artificial a través del uso de juegos?</h3>
+					<aside class="notes">
+                    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                    </aside>
+				</section -->					
+				
+                <!-- section data-background="img/punto_inicial.png">
+					<h2>Punto de partida</h2>
+					<ul>
+					<li>Docencia en Inteligencia Artificial (IA) desde 2004
+					<li>Introducimos prácticas con Robots Móviles
+					<li>Recursos escasos para mantenimiento de Robots
+					<li>Falta de fiabilidad de los Robots
+					<li>Temario extenso con multitud de técnicas diferentes
+					</ul>
+				</section -->
+
+				<!-- section data-background="img/punto_inicial.png">
+				    <h2>Punto de partida</h2>
+					<ul>
+					<li>Falta de motivación
+					<li>Bajo rendimiento académico
+					</ul>
+				</section -->
+					
+				<!-- section data-background="img/murphy.jpg">
+				</section -->					
+		
+	            <section id="objetivos">
+					<h2>Objetivos</h2>
+					<!-- img src="img/logo_objetivos.png" style="background:none; border:none; box-shadow:none;" -->
+				</section>
+
+
+                <section>
+					<h4>Objetivo principal:</h4>
+					<h2> Probar que la <b>gamificación mejora</b> el proceso de <b>aprendizaje</b> de la <b>Inteligencia Artificial</b>.
+					</h2>
+				</section>
+
+                <section>
+					<h4>Sub objetivo 1:</h4>
+					<h2> Proponer una <b>metodología</b> que ayude a los profesores a 
+<b>mejorar</b> la experiencia de <b>aprendizaje</b> de sus alumnos.
+					</h2>
+				</section>
+
+                <section>
+					<h4>Sub objetivo 2:</h4>
+					<h2> <b>Validar</b> la <b>metodología</b> a través de <b>experiencias reales</b> en el aula.
+					</h2>
+				</section>
+
+                <section>
+					<h4>Sub objetivo 3:</h4>
+					<h2> <b>Introducir</b> a los <b>alumnos</b> en la <b>investigación</b> con la publicación de un artículo científico.
+					</h2>
+				</section>
+				
+	            <section id="metodologia">
+					<h2>Metodología</h2>
+					<!-- img src="img/logo_metodologia.png" style="background:none; border:none; box-shadow:none;" -->
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<small><h4>Sub objetivo 1</h4></small>
+				</section>
+
+				
+					<section>
+					<h3>Metodología</h3>
+					
+					<table>
+					<tr>
+					<td>
+					    <ol>
+						   <li><h4><b>Estudio Técnicas IA<b></h4>
+                           <li><h4><b>Selección competiciones</b></h4>
+                           <li><h4>Estudio <b>normas</b></h4> 
+					   </ol>
+					</td>
+                    <td>
+						    <ol start="4">
+						   <li><h4><b>Propuesta alumnos.</b></h4>
+                           <li><h4><b>Diseño encuestas</b>.</h4>
+                           <li><h4><b>Planificación</b>.</h4> 
+					   </ol>
+                    </td>
+					        <td>
+						    <ol start="7">
+						   <li><h4><b>Desarrollo competición</b>.</h4>
+                           <li><h4><b>Análisis datos</b>.</h4>
+                           <li><h4><b>Publicación resultados.</b></h4> 
+					   </ol>
+                    </td>
+                    </tr>
+                    </table>					
+				</section>
+				
+				
+				<!-- section>
+					<h4>Metodología</h4>
+					<ol>
+						<h3><li><b>Estudio</b> de técnicas de <b>Inteligencia Artificial</b> y su aplicación a la <b>investigación</b>.</h3>
+
+                        <h3><li><b>Selección</b> de las <b>competiciones</b> que mejor se adaptan al <b>periodo lectivo</b>.</h3>
+						
+                        <h3><li><b>Estudio</b> de las <b>características</b> principales de la <b>competición</b>.</h3> 
+					</ol>
+				</section>
+
+				<section>
+					<h4>Metodología</h4>
+					<ol start="4">
+						<h3><li><b>Propuesta</b> a los <b>alumnos</b> de <b>participación</b> en la competición.</h3>
+                        <h3><li><b>Diseño</b> de las <b>encuestas</b> para evaluar los diferentes items.</h3>
+                        <h3><li><b>Planificación</b> de la <b>experiencia</b> docente.</h3>
+                        <h3><li>Recoger la <b>encuesta</b> previa a la experiencia.</h3> 
+					</ol>
+					
+				    <aside class="notes">
+					Uno de los resultados de la tesis es la presente metodología
+                    </aside>
+					
+				</section>
+
+				<section>
+					<h4>Metodología</h4>
+					<ol start="8">
+						<h3><li><b>Desarrollo del programa y participación</b> en la <b>competición</b>.</h3>
+                        <h3><li><b>Recopilación</b> de los datos de las <b>encuestas</b> <b>después</b> de la competición.</h3>
+                        <h3><li><b>Análisis</b> de los <b>datos</b> obtenidos.</h3>
+                        <h3><li><b>Redacción</b> de las <b>conclusiones</b>.</h3>
+                        <h3><li><b>Publicación</b> de la <b>experiencia</b> en revista de impacto.</h3> 
+					</ol>
+				</section>				
+				
+				<!-- section>
+					<h2>Antedecentes</h2>
+				</section>
+				
+                <section>
+					<h3>Introducción</h3>
+					<ol>
+						<li>Aprender jugando en Inteligencia Artificial</li>
+						<li>Competiciones de Robótica aplicadas a la Inteligencia Artificial</li>
+						<li>Descripción de las competiciones</li>						
+					</ol>
+				</section>
+
+
+                <section>
+					<h3>Introducción: Aprender jugando en Inteligencia Artificial</h3>
+					
+				</section>
+
+
+                <section>
+					<h3>Introducción: Competiciones de Robótica aplicadas a la Inteligencia Artificial</h3>
+					
+				</section -->
+
+
+               <!-- section>
+					<h3>Introducción: Descripción de las competiciones</h3>
+					<ol>
+						<li>Cosmobot 2009 y 2010</li>
+						<li>Competición de Inteligencia Artificial y Robótica 2010</li>
+						<li>First Lego League 2011 y 2012</li>
+						<li>Artificial Intelligence Challenge Ants 2011</li>
+						<li>Hello World Open Competition 2014</li>						
+					</ol>
+				</section -->				
+				
+				<section>
+				<h2>Experiencias docentes de gamificación</h2>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<small><h4>Sub objetivo 2</h4></small>				
+				</section>
+				
+				
+				<section>
+				<h4>Tomamos parte en</h4>
+				<h2>7 competiciones</h2>
+				<p>&nbsp;</p>
+				<h4><b>Cosmobot</b>2009 - <b>Cosmobot</b>2010 - <b>CIAR</b>2010 - <b>ANTS</b>2011 - <b>FLL</b>2011 - <b>FLL</b>2012 - <b>HWO</b>2014 <h4>
+				</section>
+				
+								<section>
+				<h4>Competimos en</h4>
+				<h2>4 competiciones</h2>
+				<p>&nbsp;</p>
+				<h4><b>Cosmobot</b>2009 - <b>Cosmobot</b>2010 - <b>ANTS</b>2011 - <b>HWO</b>2014 <h4>
+				</section>
+				
+				<section>
+				<h4>Publicamos</h4>
+				<h2>4 artículos</h2>
+				<h4>3 de ellos de la experiencia en 2 competiciones</h4>
+				<p>&nbsp;</p>
+				<h4><b>Cosmobot</b>2009 - <b>ANTS</b>2011 
+				</section>
+				
+				<section>
+				<h4>Publicación 1</h4>
+				<table>
+				<tr><td colspan="2"><center><img data-src="img/fuzzy_sets.png" style="background:none; border:none; box-shadow:none;"></center></td></tr>
+				<tr><td colspan="2">
+                <b>Título</b>: <b>Evolving two-dimensional fuzzy systems</b>
+				</td></tr>
+				<tr><td>               				
+Revista: <b>Fuzzy Sets and Systems</b>, 2003<br> 
+				</td></tr>
+				<tr><td colspan="2">
+<b>Autores</b>: Víctor M. Rivas, J.J. Merelo, I. Rojas, G. Romero, P.A.
+Castillo, <b>J. Carpio</b>
+				</td></tr>
+				<tr><td><b>Factor de impacto</b>:</td><td><b>0,577</b></td></tr>
+				</table>
+				</section>
+				
+					<section>
+				<h4>Publicación 2</h4>
+				<table>
+				<tr><td colspan="2"><center><img data-src="img/ijee.png" style="background:none; border:none; box-shadow:none;"></center></td></tr>
+				<tr><td colspan="2">
+                <b>Título</b>: <b>From Classroom to Mobile Robots Competition Arena:
+An Experience on Artificial Intelligence Teaching</b>
+				</td></tr>
+				<tr><td>               				
+<b>Revista</b>: <b>The International journal of engineering education</b>, 2011<br> 
+				</td></tr>
+				<tr><td colspan="2">
+<b>Autores</b>: <b>José Carpio Cañada</b>, T. J. Mateo Sanguino, S. Alcocer,
+A. Borrego, A. Isidro, A. Palanco, J.M. Rodríguez
+				</td></tr>
+				<tr><td><b>Factor de impacto</b>:</td><td><b>0,418</b></td></tr>
+				</table>
+				</section>
+				
+							<section>
+				<h4>Publicación 3</h4>
+				<table>
+				<tr><td colspan="2"><center><img data-src="img/iwann.png" style="background:none; border:none; box-shadow:none;"></center></td></tr>
+				<tr><td colspan="2">
+                <b>Título</b>: <b>Evolving the Strategies of Agents for the ANTS Game</b>
+				</td></tr>
+				<tr><td>               				
+<b>Congreso</b>: <b>International Work-Conference on Artificial Neural
+Networks (IWANN)</b>, 2013<br> 
+				</td></tr>
+				<tr><td colspan="2">
+<b>Autores</b>: <b>José Carpio</b>, Pablo García-Sánchez, Antonio Miguel Mora,
+Juan Julián Merelo Guervós, Jesús Caraballo, Fermín Vaz, Carlos Cotta
+				</td></tr>
+				<tr><td><b>Relevancia del congreso</b> atendiendo al "Computer Science Conference
+Ranking":</td><td><b>Rank&nbsp;3</b></td></tr>
+				</table>
+				</section>
+				
+			    <section>
+				<h4>Publicación 4</h4>
+				<table>
+				<tr><td colspan="2"><center><img data-src="img/jcal.png" style="background:none; border:none; box-shadow:none;"></center></td></tr>
+				<tr><td colspan="2">
+                <b>Título</b>: <b>Open classroom: enhancing student achievement on artificial
+intelligence through an international online competition</b>
+				</td></tr>
+				<tr><td>               				
+<b>Revista</b>: <b>Journal of Computer Assisted Learning</b>, 2014<br> 
+				</td></tr>
+				<tr><td colspan="2">
+<b>Autores</b>: <b>J. Carpio Cañada</b>, T.J. Mateo Sanguino, J.J. Merelo Guervós,
+V.M. Rivas Santos
+				</td></tr>
+				<tr><td><b>Factor de impacto</b>:</td><td><b>1,023</b></td></tr>
+				</table>
+				</section>
+				
+				
+			    <section>
+				   <h4>Asignaturas y Competiciones</h4>
+			       <img src="img/asignaturas.png" width="100%" style="background:none; border:none; box-shadow:none;">
+				</section>
+
+	
+					
+				
+				<!-- section>
+					<h2>Aprender jugando en Inteligencia Artificial</h2>
+				</section>
+				
+				<section>
+					<h2>Competiciones de Robótica aplicadas a la Inteligencia Artificial</h2>
+				</section>
+				
+				<section>
+					<h2>Descripción de las competiciones</h2>
+				</section -->	
+				
+				<section id="cosmobot2009" data-background="img/cosmobot2009_3.png">
+				<h2 style="background-color: white; margin: 0; opacity: 0.7; padding: 10px 200px;">Cosmobot 2009</h2>
+				</section>
+				
+				<section>
+				   <h4>Asignaturas Cosmobot 2009</h4>
+			       <img src="img/timelineCosmobot2009.png" width="100%" style="background:none; border:none; box-shadow:none;">
+				</section>
+
+				<section >
+				<h2>Cosmobot 2009</h2>
+				<table>
+				<tr><td><b>Ámbito:</b></td><td> Nacional</td></tr>
+                <tr><td><b>Lugar:</b></td><td> CosmoCaixa Madrid</td></tr>
+                <tr><td><b>Año:</b></td><td> 2009</td></tr>
+                <tr><td><b>Modalidades:</b></td><td> Robots seguidores de líneas y luchadores de sumo</td></tr>
+                <tr><td><b>Competidores:</b></td><td> 29</td></tr>
+				<tr><td><b>Participación:</b></td><td> 1 (5 personas)</td></tr>	
+				<tr><td><b>Presupuesto:</b></td><td> 1.500€ / Universidad de Huelva</td></tr>				
+                <tr><td><b>Publicación:</b></td><td> International Journal of Engineering Education
+(IJEE)</td></tr>
+				
+				</table>
+				</section>
+				
+				
+				<!-- section data-background="img/cosmobot2009_1.png">
+				
+					<aside class="notes">
+                    Cosmobot 2009 se celebra en Madrid en la sede CosmoCaixa.
+                    Reglas de la competición
+                    Los primeros de andalucía					
+                    </aside>
+				</section -->
+				
+				
+                <!-- section data-background="img/cosmobot2009_2.png">
+				</section -->
+				
+				<!-- section data-background="img/cosmobot2009_3.png">
+				
+					
+  <!-- h3 style="-moz-border-radius-bottomright: 10px; -moz-border-radius-topright: 10px; background-color: CornflowerBlue; bottom: 20px; color: #FFFF; margin: 0; opacity: 0.8; filter:alpha(opacity=40); padding: 5px 10px; position: absolute; width: 600px;" -->
+ <!-- h3 style="background-color: white; margin: 0; opacity: 0.9; padding: 10px 200px;">
+  <b>Cosmobot 2009</b> se celebra en Madrid en la sede CosmoCaixa.
+                    Reglas de la competición
+                    Los primeros de andalucía
+  </h3>
+
+		
+					<aside class="notes">
+                    Los alumnos motivados por el desarrollo completo del robot					
+                    </aside>
+				</section>
+				
+				<!-- section data-background="img/cosmobot2009_4.png">
+				</section -->
+				
+				<!-- section data-background="img/cosmobot2009_5.png">
+				</section>
+				
+				<section data-background="img/cosmobot2009_6.png">
+				</section>
+
+				<section data-background="img/cosmobot2009_7.png">
+				</section>
+
+				<section data-background="img/cosmobot2009_8.png">
+				</section>
+				
+				<section data-background="img/cosmobot2009_9.png">
+				</section -->
+
+				<!-- section data-background="img/cosmobot2009_10.png">
+				    <aside class="notes">
+                    Los alumnos motivados por el desarrollo completo del robot					
+                    </aside>
+				
+				</section -->			
+				
+				<!-- section>
+					<h2>Cosmobot 2010</h2>
+				</section>	
+
+				<section>
+				<h2>Cosmobot 2010</h2>
+				<table>
+				<tr><td><b>Ámbito:</b></td><td> Nacional</td></tr>
+                <tr><td><b>Lugar:</b></td><td> CosmoCaixa Madrid</td></tr>
+                <tr><td><b>Año:</b></td><td> 2010</td></tr>
+                <tr><td><b>Modalidades:</b></td><td> Robots seguidores de líneas y luchadores de sumo</td></tr>
+                <tr><td><b>Competidores:</b></td><td> 29</td></tr>
+				<tr><td><b>Participación:</b></td><td> 1 (2 personas)</td></tr>	
+				<tr><td><b>Presupuesto:</b></td><td> 0€</td></tr>				
+                <tr><td><b>Publicación:</b></td><td> &nbsp;</td></tr>
+				
+				</table>
+				</section>				
+
+				<section data-background="img/cosmobot2010_1.png">
+				</section>
+
+				<section data-background="img/cosmobot2010_2.png">
+				</section>
+
+				<!-- section data-background="img/cosmobot2010_3.png">
+				</section -->				
+
+				<!-- section data-background="img/cosmobot2010_4.png">
+				</section -->
+				
+				<!-- section>
+					<h2>First Lego League</h2>
+					
+								    <aside class="notes">
+					Participan estudiantes de secundaria
+					El objetivo es resolver los retos planteados por la organización
+					En 2011 estaba centrado en la alimentación "Food Factor"
+					Participan más de 500 voluntarios
+                     </aside>
+				</section>			
+
+			    <!-- section>
+				   <h2>Asignaturas y Competiciones</h2>
+			       <img src="img/asignaturas.png" width="100%" style="background:none; border:none; box-shadow:none;">
+				</section -->				
+				
+				<!-- section data-background="img/fll2011_2.jpg">
+				</section>					
+				
+				<section data-background="img/fll2011_3.jpg">
+				</section>					
+				
+				<section data-background="img/fll2011_4.jpg">
+				</section>					
+				
+				<section data-background="img/fll2011_5.jpg">
+				</section>					
+				
+				<section data-background="img/fll2011_6.jpg">
+				</section>					
+				
+				<section data-background="img/fll2012_1.jpg">
+				</section>					
+
+				<section data-background="img/fll2012_2.jpg">
+				</section>					
+				
+				 <section>
+				   <h2>Asignaturas y Competiciones</h2>
+			       <img src="img/asignaturas.png" width="100%" style="background:none; border:none; box-shadow:none;">
+				</section -->			
+				
+<section id="ants2011" data-background="img/ants2011_2.png">
+				<h2 style="background-color: white; margin: 0; opacity: 0.7; padding: 10px 200px;">Artificial Intelligence Challenge Ants&nbsp;2011</h2>
+				</section>
+				
+                <section>
+				   <h4>Asignaturas Ants 2011</h4>
+			       <img src="img/timelineAnts.png" width="100%" style="background:none; border:none; box-shadow:none;">
+				</section>				
+
+				<section>
+				<h2>AI Challenge Ants 2011</h2>
+				<table>
+				<tr><td><b>Ámbito:</b></td><td> Internacional</td></tr>
+                <tr><td><b>Lugar:</b></td><td> Sitio web de la competición</td></tr>
+                <tr><td><b>Año:</b></td><td> 2011</td></tr>
+                <tr><td><b>Modalidades:</b></td><td> Juego online</td></tr>
+                <tr><td><b>Competidores:</b></td><td> 7897</td></tr>
+				<tr><td><b>Participación:</b></td><td> 18 personas</td></tr>	
+				<tr><td><b>Presupuesto:</b></td><td> 0€ </td></tr>				
+                <tr><td valign="top"><b>Publicaciones:</b></td><td>(2) JCAL e IWANN</td></tr>
+				</table>
+				</section>			
+
+<!-- section>
+	<iframe class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/watch?v=8QdYYJWYfGI&list=PL0F15F3DC636D1C8E&index=3" frameborder="0"></iframe>
+</section -->	
+
+<section>
+    <h3>
+    <a href="visualizer/copy_paste.html" target="new">Lanzar partida</a> 
+	</h3>		  
+</section>	
+
+<!-- section>
+    <h4>This video </h4>
+    <video class="stretch" data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+</section>	
+
+<section>
+    <h4>This video </h4>
+    <video class="stretch" data-autoplay data-src="media/ants2.avi"></video>
+</section -->
+
+<!-- section><h4>First</h4>                 
+                    <!-- iframe class="stretch" src="http://www.youtube.com/embed/UrIbxk7idYA?wmode=opaque&rel=0" frameborder="0" allowfullscreen=""></iframe -->
+
+					<!-- iframe class="stretch" src="https://www.youtube.com/embed/8H873Pd5Kgk?wmode=opaque&rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+				
+            </section>
+            <section>
+                <section>
+                    <iframe class="stretch" src="http://player.vimeo.com/video/15759511?title=0" ></iframe> 
+                </section>
+                <section>Vertical Slide 2</section>
+            </section>
+            <section>Altro contenuto</section -->	
+
+
+
+				<!-- section data-background="img/ants2011_1.png">
+				</section>				
+				
+				<section data-background="img/ants2011_2.png">
+				</section>
+
+				<section data-background="img/ants2011_3.png">
+				</section -->
+
+				<!-- section data-background="img/ants2011_4.png">
+				</section -->
+				
+				<!-- section data-background="img/100primeros.png">
+				<h3>Nacionalidades de los 100 primeros participantes</h3>
+				<h6>AI Challenge ANTS 2011</h6>
+				    <aside class="notes">
+					Participan más de X paises
+                    Participan trabajadores de la mayores empresas de desarrollo de software como IBM, Microsoft, Google, etc
+                    Estudiantes de las más prestigiosas Universidades MIT, Stanfor, Berkeley EPFL, etc.   					
+                    </aside>
+				
+				</section -->				
+	
+			    <!-- section>
+				   <h2>Asignaturas y Competiciones</h2>
+			       <img src="img/asignaturas.png" width="100%" style="background:none; border:none; box-shadow:none;">
+				</section -->	
+				
+				<!-- section>
+					<h2>Hello World Open 2014</h2>
+				</section>
+
+				<section data-background="img/hwo2014_1.png">
+				</section>				
+				
+				<section data-background="img/hwo2014_2.png">
+				</section>		
+				
+				<section data-background="img/hwo2014_3.png">
+				</section -->		
+
+				<!-- section data-background="img/hwo2014_4.png">
+				</section>		
+
+				<section data-background="img/hwo2014_5.png">
+				</section -->		
+			
+				<!-- section data-background="img/hwo2014_6.png">
+				</section -->		
+				
+				<!-- section>
+				<h2>Publicaciones con participación de alumnos</h2>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+                <small><h4>Sub objetivo 3</h4></small>				
+				</section>
+				
+				<section>
+				<h4>Publicamos</h4>
+				<h2>3 trabajos científicos</h2>
+				<h4>con participación de los alumnos.</h4>
+				</section>			
+
+				<section id="resultados">
+					<h2>Discusión y Resultados</h2>
+	                <!-- img src="img/logo_resultados.png" style="background:none; border:none; box-shadow:none;" -->
+				<!-- /section -->
+				
+				<!-- section>
+				<h2>Carnegie Mellon University vs Universidad de Huelva</h2>
+				
+				  participantes<br>
+				  12 vs 18<br>
+				  mejor clasificado<br> 
+				  435 vs 
+				</section -->
+				
+				<section id="resultados">
+					<h2>Resultados</h2>
+                    <!-- img src="img/logo_conclusiones.png" style="background:none; border:none; box-shadow:none;" -->
+				</section>
+				
+			    <section data-background="img/ants2011_horas.png">
+				</section>
+				
+				<section data-background="img/ants2011_encuesta1.png">
+				</section>
+				
+				<section data-background="img/ants2011_encuesta2.png">
+				</section>
+				
+				<section data-background="img/ants2011_calificaciones1.png">
+				</section>
+
+				<section id="conclusiones">
+					<h2>Conclusiones</h2>
+                    <!-- img src="img/logo_conclusiones.png" style="background:none; border:none; box-shadow:none;" -->
+				</section>
+
+				<section>
+					<h4>Conclusión 1:</h4>
+					<p>La <b>metodología</b> propuesta para el uso de la <b>gamificación</b> en
+el <b>aprendizaje</b> de la <b>Inteligencia Artificial</b> es adecuada y <b>obtiene mejoras
+significativas</b> en aspectos como la <b>motivación</b> y la mejora
+de los <b>conocimientos adquiridos</b>.
+					</p>
+					
+										
+				    <aside class="notes">
+					Corregir la frase mejor y mejora
+                    </aside>
+				</section>
+
+
+				<section>
+					<h4>Conclusión 2:</h4>
+					<p>Que <b>es posible introducir</b> de forma satisfactoria <b>estas
+experiencias</b> dentro de los <b>planes de estudios tradicionales</b>
+y que es posible <b>compatibilizar</b> el <b>enfoque más tradicional</b>
+de la enseñanza.
+					</p>
+				</section>
+
+				<section>
+					<h4>Conclusión 3:</h4>
+					<p>Que en el presente trabajo <b>encontrará una guía</b> para <b>poner
+en práctica</b> una <b>experiencia de gamificación en el aula</b> con
+información sobre <b>recursos necesarios</b> y una <b>orientación sobre
+la planificación</b> de la actividad.
+					</p>
+				</section>
+
+				<section>
+					<h4>Conclusión 4:</h4>
+					<p>Que es posible utilizar <b>la experiencia de gamificación</b> en el
+aula como una herramienta que <b>sirva para introducir a los alumnos</b>
+en la <b>investigación</b>.
+					</p>
+				</section>
+				
+				<section>
+				<h3>Trabajos futuros</h3>
+				<ul>
+				
+				<li><h4><b>Ampliar</b> la participación a <b>más asignaturas</b> y un <b>mayor número de alumnos</b>.</li>
+				<li><h4><b>Publicar</b> la experiencia de <b>competiciones anteriores</b>.</li>
+				<li><h4>Ya está en marcha la próxima competición: <b>Desafío Solar Costa de la Luz 2016.</h4></b></li>
+				
+				</ul>
+				
+				</section>
+				<section>
+				   <h4>Enlaces</h4>
+				   <ul>
+				   <li><a href="https://www.facebook.com/onubot">Cosmobot 2009 y 2010 en Facebook</a>
+				   <li><a href="https://www.facebook.com/fllhuelva">Fist Lego League Huelva en Facebook</a>
+				   <li><a href="http://ants.aichallenge.org/">AI Challenge Ants 2011</a>
+				   <li><a href="https://2014.helloworldopen.com/">Hello World Open 2014</a>
+				   </ul>
+                </section>
+				   
+				<section>
+					<h1>Gracias</h1>
+				</section>
+				
+				<div style="display: block;" class="progress"><span style="width: 0px;"></span></div><div class="state-background"></div><div class="pause-overlay"></div></div>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
